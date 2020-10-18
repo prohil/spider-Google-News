@@ -1,0 +1,75 @@
+1.
+SELECT month(young.date) as "month", AVG(young.price) FROM(
+	SELECT purchases.userId, purchases.itemId, purchases.date, items.price, users.age
+	FROM purchases
+	INNER JOIN items ON items.itemId = purchases.itemId
+	INNER JOIN users ON users.userId = purchases.userId
+    WHERE users.age >= 18 and users.age <= 25
+) AS young
+group by month(young.date)
+
+SELECT month(young.date) as "month", AVG(young.price) FROM(
+	SELECT purchases.userId, purchases.itemId, purchases.date, items.price, users.age
+	FROM purchases
+	INNER JOIN items ON items.itemId = purchases.itemId
+	INNER JOIN users ON users.userId = purchases.userId
+    WHERE users.age >= 26 and users.age <= 35
+) AS young
+group by month(young.date)
+
+2.
+WITH cte (mth, average) AS (
+	SELECT month(young.date) as "month", AVG(young.price) as "average" FROM(
+		SELECT purchases.userId, purchases.itemId, purchases.date, items.price, users.age
+		FROM purchases
+		INNER JOIN items ON items.itemId = purchases.itemId
+		INNER JOIN users ON users.userId = purchases.userId
+		WHERE users.age >= 35
+	) AS young
+	group by month(young.date)
+)
+SELECT mth, MAX(average) FROM cte
+
+3.
+WITH cte (year, itm, price, sum_price) AS (
+	SELECT year(it.date) as "year", it.itemId as "itm", it.price as "price", SUM(it.price) as "sum"
+    FROM(
+		SELECT purchases.userId, purchases.itemId, purchases.date, items.price, users.age
+		FROM purchases
+		INNER JOIN items ON items.itemId = purchases.itemId
+		INNER JOIN users ON users.userId = purchases.userId
+        WHERE DATE(purchases.date) BETWEEN (CURDATE() - YEAR(CURDATE())) AND CURDATE()
+	) AS it
+	group by it.price, year(it.date)
+)
+SELECT percentage.itm, MAX(percentage.max_percent)
+FROM(
+	SELECT itm, sum_price, sum_price / (sum(sum_price) OVER (partition BY year)) * 100 as "max_percent"
+    FROM cte
+) as percentage
+
+4.
+WITH cte (year, itm, price, sum_price) AS (
+	SELECT year(it.date) as "year", it.itemId as "itm", it.price as "price", SUM(it.price) as "sum"
+    FROM(
+		SELECT purchases.userId, purchases.itemId, purchases.date, items.price, users.age
+		FROM purchases
+		INNER JOIN items ON items.itemId = purchases.itemId
+		INNER JOIN users ON users.userId = purchases.userId
+	) AS it
+	group by it.price, year(it.date)
+    order by SUM(it.price) DESC
+)
+
+SELECT t1.year, t1.itm, t2.max_percent FROM
+(SELECT * FROM cte
+LIMIT 3) t1
+INNER JOIN
+(SELECT year, itm, sum_price, sum_price / (sum(sum_price) OVER (partition BY year)) * 100 as "max_percent"
+    FROM cte
+    order by year, max_percent DESC) t2
+ON t1.year = t2.year and t1.itm = t2.itm
+
+
+
+
