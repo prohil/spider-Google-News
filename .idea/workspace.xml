@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24b46bc4-3fab-4a07-9f10-e8bbe6b5b1d5" name="Default Changelist" comment="" />
+    <list default="true" id="24b46bc4-3fab-4a07-9f10-e8bbe6b5b1d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/correct_urls.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse_links.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +23,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1j3CA8KnUUIV9YG3SuOxxrugrNH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,7 +39,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="crawler" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="parser google news" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -38,8 +51,8 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="script.py parse_links.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawler.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -73,43 +86,116 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603037009273">
+    <state x="275" y="24" key="#Code_Folding" timestamp="1603285901708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1603037009273" />
+    <state x="275" y="24" key="#Code_Folding/0.0.1366.728@0.0.1366.728" timestamp="1603285901708" />
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603284397050">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1603284397050" />
     <state x="449" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603052587994">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="449" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1603052587994" />
-    <state x="462" y="120" key="FileChooserDialogImpl" timestamp="1603026127491">
+    <state width="554" height="442" key="Diff.GoToChangePopup" timestamp="1603283350601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603026127491" />
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1603045455985">
+    <state width="554" height="442" key="Diff.GoToChangePopup/0.0.1366.728@0.0.1366.728" timestamp="1603283350601" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603283385348">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603045455985" />
-    <state width="1344" height="174" key="GridCell.Tab.0.center" timestamp="1603045455985">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1603283385348" />
+    <state x="462" y="120" key="FileChooserDialogImpl" timestamp="1603283589850">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603045455985" />
-    <state width="1344" height="174" key="GridCell.Tab.0.left" timestamp="1603045455985">
+    <state x="462" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603283589850" />
+    <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1603288009059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603045455985" />
-    <state width="1344" height="174" key="GridCell.Tab.0.right" timestamp="1603045455985">
+    <state width="1344" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603288009059" />
+    <state width="1344" height="174" key="GridCell.Tab.0.center" timestamp="1603288009059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603045455985" />
+    <state width="1344" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603288009059" />
+    <state width="1344" height="174" key="GridCell.Tab.0.left" timestamp="1603288009059">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603288009059" />
+    <state width="1344" height="174" key="GridCell.Tab.0.right" timestamp="1603288009059">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603288009059" />
+    <state width="1344" height="217" key="GridCell.Tab.1.bottom" timestamp="1603283290054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603283290054" />
+    <state width="1344" height="217" key="GridCell.Tab.1.center" timestamp="1603283290053">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1603283290053" />
+    <state width="1344" height="217" key="GridCell.Tab.1.left" timestamp="1603283290053">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1603283290053" />
+    <state width="1344" height="217" key="GridCell.Tab.1.right" timestamp="1603283290054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1603283290054" />
+    <state x="421" y="76" key="RollbackChangesDialog" timestamp="1603283261848">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="421" y="76" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603283261848" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1603045149654">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603045149654" />
+    <state x="386" y="70" key="VCS.ChangeListViewerDialog" timestamp="1603283361238">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="386" y="70" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1603283361238" />
+    <state x="530" y="284" key="VCS.ChangelistChooser" timestamp="1603283344148">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="530" y="284" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1603283344148" />
+    <state x="-14" y="88" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603283594878">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-14" y="88" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1603283594878" />
     <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1603025134433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1603025134433" />
+    <state x="494" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603283722892">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="494" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1603283722892" />
+    <state x="362" y="228" key="git4idea.ui.GitUnstashDialog" timestamp="1603283248591">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="362" y="228" key="git4idea.ui.GitUnstashDialog/0.0.1366.728@0.0.1366.728" timestamp="1603283248591" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603045014816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
